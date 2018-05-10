@@ -1,0 +1,25 @@
+[v-cloak] { display: none; }
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: .68rem;
+    padding: 0 .18rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.head-portrait img {
+    width: .45rem;
+    height: .45rem;
+    margin-right: .08rem;
+    border-radius: 100%;
+}
+.focus-on{
+    width: .5rem;
+    height: .26rem;
+    background-color:rgb(66, 190, 236);
+    color: #FFF;
+    border-radius: .03rem;
+    font-size: .12rem;
+    line-height: .26rem;
+}
