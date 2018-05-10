@@ -7,12 +7,53 @@
     padding: 0 .18rem;
     border-bottom: 1px solid #e8e8e8;
 }
-
+.user-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.head-portrait{
+    position: relative;
+    margin-right: .2rem;
+}
 .head-portrait img {
     width: .45rem;
     height: .45rem;
-    margin-right: .08rem;
     border-radius: 100%;
+    display: block;
+}
+.level{
+    position: absolute;
+    right: -.15rem;
+    bottom:-.02rem;
+    width: .4rem;
+    height: .15rem;
+    background-color: rgb(130, 203, 94);
+    border-radius: .15rem;
+    border: .02rem solid #FFF;
+    color: #FFF;
+    line-height: .15rem;
+}
+.level span {
+    margin: 0 .03rem;
+    font-size: .12rem;
+    vertical-align: top;
+}
+.level label {
+    font-size: .11rem;
+    vertical-align: top;
+}
+.name-time{
+    /* padding-top: .05rem;
+    margin-right: .16rem; */
+}
+.name{
+    color: #1e1e1e;
+    font-size: .16rem;
+}
+.time{
+    color: #929292;
+    font-size: .12rem;
 }
 .focus-on{
     width: .5rem;
@@ -22,4 +63,57 @@
     border-radius: .03rem;
     font-size: .12rem;
     line-height: .26rem;
+}
+.designation li{
+    float: left;
+    margin: 0 .05rem;
+}
+.designation li div{
+    position: relative;
+    float: left;
+    /* padding: .01remrem; */
+    font-size: .12rem;
+    color: #FFF;
+}
+
+.designation li span:nth-child(1){
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 1px;
+    height: 1px;
+    background-color: #FFF;
+    border-radius: 1px;
+}
+.designation li span:nth-child(2){
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 1px;
+    height: 1px;
+    background-color: #FFF;
+    border-radius: 1px;
+}
+
+.designation li span:nth-child(3){
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    width: 1px;
+    height: 1px;
+    background-color: #FFF;
+    border-radius: 1px;
+}
+.designation li span:nth-child(4){
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    width: 1px;
+    height: 1px;
+    background-color: #FFF;
+    border-radius: 1px;
+}
+.designation li label{
+    display: inline-block;
+    transform: scale(.8);
 }

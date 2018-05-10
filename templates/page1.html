@@ -13,8 +13,16 @@
         <div class="top">
             <div class="user-info">
                 <div class="head-portrait">
-                    <img :src ='headImg' alt="">
+                    <img  :src ="headImg" alt="">
+                    <div class="level"><span>LV</span><label>{{ level }}</label></div>
                 </div>
+                <div class="name-time">
+                    <div class="name"> {{ name }} </div>
+                    <div class="time"> {{ time }} </div>
+                </div>
+                <ul class="designation">
+                    <li v-for=" item in designation"><div :style="{ background: item.color }"><span></span><span></span><span></span><span></span><label>{{ item.text }}</label></div></li>
+                </ul>
             </div>
             <button class="focus-on">关注</button>
         </div>
@@ -31,6 +39,12 @@
                 headImg: 'http://pic.baike.soso.com/p/20130731/20130731115847-8336238.jpg',
                 name: "伊藤诚",
                 time: '24分钟前',
+                level: '14',
+                designation: [
+                    {color: '#fd9f00', text: '老司机'},
+                    {color: '#4999e8', text: '雪域肝神'},
+                    {color: '#82cc5e', text: '捏塔勇者'},
+                ]
             }
         })
     </script>
