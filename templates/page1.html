@@ -10,21 +10,28 @@
 </head>
 <body>
     <div id="app" v-cloak>
-        <div class="top">
+        <div class="header">
             <div class="user-info">
                 <div class="head-portrait">
-                    <img  :src ="headImg" alt="">
-                    <div class="level"><span>LV</span><label>{{ level }}</label></div>
+                    <img  alt="">
+                    <div class="level"><span>LV</span><label></label></div>
                 </div>
                 <div class="name-time">
-                    <div class="name"> {{ name }} </div>
-                    <div class="time"> {{ time }} </div>
+                    <div class="name">  </div>
+                    <div class="time"> </div>
                 </div>
                 <ul class="designation">
-                    <li v-for=" item in designation"><div :style="{ background: item.color }"><span></span><span></span><span></span><span></span><label>{{ item.text }}</label></div></li>
+                    <li ><div ><span></span><span></span><span></span><span></span><a href="#">1</a></div></li>
+                    <li ><div ><span></span><span></span><span></span><span></span><a href="http://www.baidu.com">1</a></div></li>
                 </ul>
             </div>
             <button class="focus-on">关注</button>
+        </div>
+        <div class="content">
+            <h2 class="title"></h2>
+            <ul class="text">
+                <li></li>
+            </ul>
         </div>
     </div>
     <script src="../static/js/size.js"></script>
@@ -32,20 +39,20 @@
     <script src="../static/js/vue.js"></script>
     <script src="../components/components.js"></script>
     <script>
+        // var _data;
+        // $.ajax({
+        //     url: 'http://106.75.210.68:12333/api/doc/loadV3/a8f8fdde-a8ef-4d84-8636-992c02eb9852/2ad3f882-6b1b-4261-b70e-4eab520ffff6',
+        //     type: 'GET',
+        //     data: {},
+        //     dataType : 'json',
+        //     success: function (data) {
+        //         _data = data.data;
+        //         console.log(data.data);
+        //     }
+        // });
         var app = new Vue({
             el: '#app',
-            data: {
-                title: "关于热门的京东动画小林家的妹抖龙我来说两句",
-                headImg: 'http://pic.baike.soso.com/p/20130731/20130731115847-8336238.jpg',
-                name: "伊藤诚",
-                time: '24分钟前',
-                level: '14',
-                designation: [
-                    {color: '#fd9f00', text: '老司机'},
-                    {color: '#4999e8', text: '雪域肝神'},
-                    {color: '#82cc5e', text: '捏塔勇者'},
-                ]
-            }
+            data: {},
         })
     </script>
 </body>

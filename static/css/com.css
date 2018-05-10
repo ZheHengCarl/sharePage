@@ -1,10 +1,10 @@
 [v-cloak] { display: none; }
-.top {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: .68rem;
-    padding: 0 .18rem;
+    padding: 0 .09rem;
     border-bottom: 1px solid #e8e8e8;
 }
 .user-info{
@@ -30,22 +30,24 @@
     height: .15rem;
     background-color: rgb(130, 203, 94);
     border-radius: .15rem;
-    border: .02rem solid #FFF;
+    border: .01rem solid #FFF;
     color: #FFF;
     line-height: .15rem;
 }
 .level span {
+    display: inline-block;
     margin: 0 .03rem;
     font-size: .12rem;
     vertical-align: top;
+    transform: scale(.8);
 }
 .level label {
     font-size: .11rem;
     vertical-align: top;
 }
 .name-time{
-    /* padding-top: .05rem;
-    margin-right: .16rem; */
+    padding-top: .05rem;
+    margin-right: .08rem;
 }
 .name{
     color: #1e1e1e;
@@ -64,6 +66,9 @@
     font-size: .12rem;
     line-height: .26rem;
 }
+.designation{
+    margin-top: -.1rem;
+}
 .designation li{
     float: left;
     margin: 0 .05rem;
@@ -73,7 +78,7 @@
     float: left;
     /* padding: .01remrem; */
     font-size: .12rem;
-    color: #FFF;
+    color: #000;
 }
 
 .designation li span:nth-child(1){
@@ -113,7 +118,16 @@
     background-color: #FFF;
     border-radius: 1px;
 }
-.designation li label{
+.designation li a{
     display: inline-block;
-    transform: scale(.8);
+    transform: scale(.75);
+}
+.content{
+    padding:  .28rem .18rem;
+}
+.content .title {
+    font-size: .2rem;
+    color: #1e1e1e;
+    font-weight: bold;
+    line-height: .28rem;
 }
