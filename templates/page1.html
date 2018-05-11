@@ -13,47 +13,52 @@
         <div class="header">
             <div class="user-info">
                 <div class="head-portrait">
-                    <img  alt="">
-                    <div class="level"><span>LV</span><label></label></div>
+                    <img :src=" imgUrl + postDatas.userIcon " alt="">
+                    <div class="level"><span>LV</span><label> {{ postDatas.userLevel }} </label></div>
                 </div>
                 <div class="name-time">
-                    <div class="name">  </div>
-                    <div class="time"> </div>
+                    <div class="name"> {{ postDatas.userName }} </div>
+                    <div class="time"> {{ postDatas.createTime.split(' ').shift() }} </div>
                 </div>
                 <ul class="designation">
-                    <li ><div ><span></span><span></span><span></span><span></span><a href="../templates/page2.html">跳转1</a></div></li>
-                    <li ><div ><span></span><span></span><span></span><span></span><a href="http://www.baidu.com">跳转2</a></div></li>
+                    <li ><div :style="{ background:'#' + postDatas.userLevelColor}"><span></span><span></span><span></span><span></span><label>{{ postDatas.userLevelName }}</label></div></li>
                 </ul>
             </div>
             <button class="focus-on">关注</button>
         </div>
         <div class="content">
-            <h2 class="title"></h2>
-            <ul class="text">
-                <li></li>
+            <h2 class="title"> {{ postDatas.title }} </h2>
+            <ul class="text" v-for=" item in postDatas.details ">
+                <li>
+                    <p v-if="item.type == 'DOC_TEXT'">{{ item.data.text }}</p>
+                    <p v-if="item.type == 'DOC_IMAGE'"><img :src=" imgUrl + item.data.path" alt=""></p>
+                </li>
             </ul>
         </div>
     </div>
     <script src="../static/js/size.js"></script>
     <script src="../static/js/jquery-1.7.2.min.js"></script>
     <script src="../static/js/vue.js"></script>
-    <script src="../components/components.js"></script>
     <script>
-        // var _data;
-        // $.ajax({
-        //     url: 'http://106.75.210.68:12333/api/doc/loadV3/a8f8fdde-a8ef-4d84-8636-992c02eb9852/2ad3f882-6b1b-4261-b70e-4eab520ffff6',
-        //     type: 'GET',
-        //     data: {},
-        //     dataType : 'json',
-        //     success: function (data) {
-        //         _data = data.data;
-        //         console.log(data.data);
-        //     }
-        // });
-        var app = new Vue({
-            el: '#app',
-            data: {},
-        })
+        $.ajax({
+            url: "http://106.75.210.68:12333/api/doc/loadV3/a8f8fdde-a8ef-4d84-8636-992c02eb9852/2ad3f882-6b1b-4261-b70e-4eab520ffff6",
+            dataType : 'json',
+            success: function (data) {
+                console.log(data.data);
+                var vm = new Vue({
+                    el: '#app',
+                    data: {
+                        imgUrl: "http://s.moemoe.la/",
+                        postDatas: data.data
+                    },
+                    methods: {
+                        locationApp: function (url) {
+                            window.location.href = 'mydocdetail/openmoemoe.la';
+                        }
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
