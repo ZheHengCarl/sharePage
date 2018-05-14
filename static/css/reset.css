@@ -12,3 +12,4 @@ li { -webkit-tap-highlight-color:transparent;}
 /* 特殊作用 */
 .ClearFix:after{ display:block; content:""; clear:both;}
 dl:after { display:block; content:""; clear:both;}
+[v-cloak] { display: none; }

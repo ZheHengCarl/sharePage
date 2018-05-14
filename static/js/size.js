@@ -1,7 +1,6 @@
 ﻿var changeFont = function () {
     var nWdWidth = window.innerWidth;
     var nFontSize = nWdWidth / 750 * 200;
-    console.log(nFontSize);
     document.getElementsByTagName("html")[0].style.fontSize = nFontSize + "px";
 }
 changeFont();
