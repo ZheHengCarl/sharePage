@@ -252,7 +252,7 @@
   height: 1rem;
   border-bottom: 1px solid #e8e8e8;
   box-shadow: 0rem 0.21rem 0.21rem -0.21rem rgba(169, 169, 169, 0.2), 0rem -0.21rem 0.21rem -0.1rem rgba(169, 169, 169, 0.2); }
-  .synthesis .header h3, .synthesis .article .header span, .article .synthesis .header span {
+  .synthesis .header h3 {
     font-size: .30rem;
     margin-left: .5rem; }
   .synthesis .header span {
@@ -260,8 +260,7 @@
     margin-left: .4rem; }
     .synthesis .header span i {
       display: inline-block;
-      font-style: normal;
-      transform: scale(0.8, 0.8); }
+      font-style: normal; }
     .synthesis .header span i:nth-child(1) {
       color: #74cff1; }
     .synthesis .header span i:nth-child(2) {
@@ -313,7 +312,7 @@
   height: 1rem;
   border-bottom: 1px solid #e8e8e8;
   box-shadow: 0rem 0.21rem 0.21rem -0.21rem rgba(169, 169, 169, 0.2), 0rem -0.21rem 0.21rem -0.1rem rgba(169, 169, 169, 0.2); }
-  .novel .header h3, .novel .article .header span, .article .novel .header span {
+  .novel .header h3 {
     font-size: .30rem;
     margin-left: .5rem; }
   .novel .header span {
@@ -348,7 +347,7 @@
       display: flex;
       flex-direction: column;
       margin-left: 0.2rem; }
-      .novel .main ul li .right h3, .novel .main ul li .right .article .header span, .article .header .novel .main ul li .right span {
+      .novel .main ul li .right h3 {
         margin: 0;
         font-size: 0.25rem; }
       .novel .main ul li .right span:nth-child(2), .novel .synthesis .main ul li:nth-last-child(2) .right span:nth-child(3), .synthesis .novel .main ul li:nth-last-child(2) .right span:nth-child(3), .novel .synthesis .main ul li:last-child .right span:nth-child(3), .synthesis .novel .main ul li:last-child .right span:nth-child(3) {
@@ -377,15 +376,10 @@
   border-bottom: 1px solid #e8e8e8;
   box-shadow: 0rem 0.21rem 0.21rem -0.21rem rgba(169, 169, 169, 0.2), 0rem -0.21rem 0.21rem -0.1rem rgba(169, 169, 169, 0.2);
   flex-direction: row;
-  align-items: center; }
-  .article .header h3, .article .header span {
-    font-size: 0.36rem;
-    margin-left: 2.7rem; }
-  .article .header span {
-    display: inline-block;
-    margin-left: 1.3rem; }
-    .article .header span a {
-      color: #42BEEC; }
+  align-items: center;
+  justify-content: center; }
+  .article .header h3 {
+    font-size: 0.36rem; }
 .article .main ul {
   display: flex;
   flex-direction: column;
@@ -408,13 +402,14 @@
       display: flex;
       flex-direction: column;
       margin-left: 0.2rem; }
-      .article .main ul li .right h3, .article .main ul li .right .header span, .article .header .main ul li .right span {
+      .article .main ul li .right h3 {
         margin: 0;
         font-size: 0.3rem; }
-        .article .main ul li .right h3 span, .article .main ul li .right .header span span, .article .header .main ul li .right span span {
+        .article .main ul li .right h3 span {
           font-weight: bold;
           color: #E9573F; }
       .article .main ul li .right span:nth-child(2), .article .synthesis .main ul li:nth-last-child(2) .right span:nth-child(3), .synthesis .article .main ul li:nth-last-child(2) .right span:nth-child(3), .article .synthesis .main ul li:last-child .right span:nth-child(3), .synthesis .article .main ul li:last-child .right span:nth-child(3) {
+        font-weight: normal;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -425,6 +420,7 @@
         color: #929292; }
       .article .main ul li .right span:nth-child(3) {
         display: inline-block;
+        font-weight: normal;
         position: relative;
         color: #929292;
         width: 100%;
@@ -451,7 +447,7 @@
   box-shadow: 0rem 0.21rem 0.21rem -0.21rem rgba(169, 169, 169, 0.2), 0rem -0.21rem 0.21rem -0.1rem rgba(169, 169, 169, 0.2);
   flex-direction: column;
   justify-content: center; }
-  .comic .header h3, .comic .article .header span, .article .comic .header span {
+  .comic .header h3 {
     font-size: .30rem;
     margin-left: .5rem; }
   .comic .header span {
@@ -459,8 +455,7 @@
     margin-left: .4rem; }
     .comic .header span i {
       display: inline-block;
-      font-style: normal;
-      transform: scale(0.8, 0.8); }
+      font-style: normal; }
     .comic .header span i:nth-child(1) {
       color: #74cff1; }
     .comic .header span i:nth-child(2) {
