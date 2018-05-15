@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.collection {
+  position: absolute;
+  display: inline-block;
+  bottom: 0.3rem;
+  right: 0.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
