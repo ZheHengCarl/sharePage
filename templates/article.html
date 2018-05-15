@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  
+  <link rel="stylesheet" href="../static/css/com.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="articl" class="article">
+    <div class="header">
+      <h3>他的文章</h3><span> <a href="#">投稿箱</a> </span>
+    </div>
+    <div class="main">
+      <ul>
+        <li v-for=" items in 3">
+          <div class="left">
+            <img src="../static/img/1.png" alt="">
+          </div>
+          <div class="right">
+            <h3>灯光摇曳。灯笼特级<span>【待审核】</span></h3>
+            <span>
+              <p>得不到的永远在骚动，被偏爱的都有恃无恐 得不到的永远在骚动，得不到的永远在骚动，被偏爱的都有恃无恐 得不到的永远在骚动
+              </p>
+            </span>
+            <span>
+              <i>2017-6-12</i>
+              <i> 阅读4414</i>
+              <i>评论24</i>
+              <i>投稿在 <b>美图部</b> </i>
+            </span>
+          </div>
+        </li>
+
+      </ul>
+      
+    </div>
+  </div>
+</body>
+<script src="../static/js/size.js"></script>
+<script src="../static/js/jquery-2.1.3.min.js"></script>
+<script src="../static/js/vue.js"></script>
+<script>
+  var Article = new Vue({
+    el:"#articl",
+    data:{
+
+    }
+  })
+</script>
+</html>

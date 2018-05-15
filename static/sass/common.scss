@@ -1,12 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
+@mixin border-bottom(){
+    border-bottom: 1px solid #e7e7e7;
 }
-
-ul {
-  list-style: none;
+@mixin header (){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1rem;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0rem 0.21rem 0.21rem -0.21rem rgba(169, 169, 169, 0.2), 0rem -0.21rem 0.21rem -0.1rem rgba(169, 169, 169, 0.2);
 }
-
 .collection {
   position: absolute;
   display: inline-block;

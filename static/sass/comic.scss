@@ -1,0 +1,81 @@
+.comic{
+  .header {
+    @include header;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      font-size: .30rem;
+      margin-left: .5rem;
+      
+    }
+    span {
+      font-size: .18rem;
+      margin-left: .4rem;
+      i {
+        display: inline-block;
+        font-style: normal;
+        transform:  scale(0.8,0.8);
+      }
+      i:nth-child(1) {
+        color: #74cff1;
+      }
+      i:nth-child(2) {
+        color: #fc95b5;
+        margin-left: -0.1rem;
+      }
+    }
+  }
+  .main{
+    position: relative;
+    padding-bottom: 4rem;
+    @include border-bottom;
+    ul{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      li{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width:2.22rem;
+        margin-top: 0.2rem;
+        margin-left: 0.2rem;
+        
+        img{
+          width: 100%;
+          height:2.9rem;
+          border-radius: 0.1rem;
+        }
+        span{
+          display: inline-block;
+          margin-top: 0.1rem;
+          font-size: 0.2rem;
+          color: #929292;
+          width: 100%;
+          overflow: hidden;
+          
+          white-space: nowrap;
+          text-overflow:ellipsis;
+          
+         
+        }
+        i{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          border-radius: 0rem 0.1rem 0rem 0.1rem;
+          right: 0;
+          top: 0;
+          font-size: 0.24rem;
+          font-style: normal;
+          width: 0.82rem;
+          height: 0.48rem;
+          color: white;
+          background: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}

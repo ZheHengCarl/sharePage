@@ -1,0 +1,93 @@
+.article {
+  .header {
+    @include header;
+    flex-direction: row;
+    align-items: center;
+    h3 {
+      font-size: 0.36rem;
+      margin-left: 2.7rem;
+    }
+    span {
+      display: inline-block;
+      margin-left: 1.3rem;
+      @extend h3;
+      a {
+        color: #42BEEC;
+      }
+    }
+  }
+  .main {
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.3rem;
+      li {
+        display: flex;
+        flex-direction: row;
+        height: 1.52rem;
+        padding-left: 0.3rem;
+        padding-bottom: 0.3rem;
+        margin-top: 0.3rem;
+        @include border-bottom;
+        .left {
+          display: inline-block;
+          width: 1.13rem;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          margin-left: 0.2rem;
+          h3 {
+            margin: 0;
+            font-size: 0.3rem;
+            span{
+              font-weight: bold;
+              color: #E9573F;
+            }
+          }
+         
+          span:nth-child(2) {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            width: 5.67rem;
+            overflow: hidden;
+            margin-top: 0.07rem;
+            font-size: 0.24rem;
+            color: #929292;
+          }
+
+          span:nth-child(3) {
+            display: inline-block;
+            position: relative;
+            color: #929292;
+            width: 100%;
+            
+            text-align: left;
+            margin-top:0.07rem;
+            font-size: 0.2rem;
+            i{
+              transform:  scale(0.9,0.9);
+            }
+            
+            i:not(:first-child){
+              display: inline-block;
+              margin-left: 0.2rem;
+            }
+            i:last-child{
+              position: absolute;
+              right: 0rem;
+              b{
+                color: #42BEEC;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

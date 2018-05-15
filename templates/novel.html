@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="novel">
+  <div id="novels" class="novel">
     <div class="header">
         <h3>杂七杂八de东西</h3>
         <span>
@@ -21,22 +21,35 @@
     </div>
     <div class="main">
       <ul>
-        <li>
-          <div></div>
-          <div>
-            <span></span>
-            <span><i></i><i></i></span>
-            <span><p></p></span>
+        <li v-for="item in 3">
+          <div class="left"><img src="../static/img/1.png" alt=""></div>
+          <div class="right">
+            <h3>第一话 剑来</h3>
+            <span><i>up  烽火戏诸侯</i><i> 字数 110000</i></span>
+            <span><p>得不到的永远在骚动，被偏爱的都有恃无恐
+              得不到的永远在骚动，得不到的永远在骚动，被偏爱的都有恃无恐
+              得不到的永远在骚动
+            </p></span>
           </div>
         </li>
-        <li></li>
-        <li></li>
+        
       </ul>
+      <span class="collection">
+        <img src="../static/img/3.png" alt="">
+      </span>
     </div>
   </div>
 </body>
 <script src="../static/js/size.js"></script>
 <script src="../static/js/jquery-2.1.3.min.js"></script>
 <script src="../static/js/vue.js"></script>
+<script>
+  var Novel = new Vue({
+    el:"#novels",
+    data:{
+
+    }
+  })
+</script>
 
 </html>

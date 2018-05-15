@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/com.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="comi" class="comic">
+    <div class="header">
+      <h3>杂七杂八de东西</h3>
+      <span>
+        <i>美图-萝莉</i>
+        <i>售价 15节操</i>
+      </span>
+    </div>
+    <div class="main">
+        <ul>
+          <li v-for="items in 6"><img src="../static/img/1.png" alt=""><span> 第一话 木头人木头人木头人 </span><i>22P</i></li>
+        </ul>
+        <span class="collection" ><img src="../static/img/3.png" alt=""></span>
+    </div>
+  </div>
+</body>
+<script src="../static/js/size.js"></script>
+<script src="../static/js/jquery-2.1.3.min.js"></script>
+<script src="../static/js/vue.js"></script>
+<script>
+  var Comic = new Vue({
+    el:"#comi",
+    data:{
+
+    }
+  })
+</script>
+</html>
