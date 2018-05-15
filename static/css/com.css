@@ -116,8 +116,11 @@
   color: #444;
   line-height: .24rem;
   font-size: .15rem; }
+  .doc .text li p:last-child {
+    margin-bottom: 0; }
 .doc .text li p img {
-  width: 100%; }
+  width: 100%;
+  vertical-align: top; }
 .doc .footer {
   display: flex;
   align-items: center;
@@ -136,5 +139,27 @@
   border-right: 1px solid #FFF; }
 .doc .footer li .num {
   padding-left: .05rem; }
+
+.atlas .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1rem;
+  margin-bottom: .2rem;
+  padding: 0 .95rem;
+  border-bottom: 1px solid #e7e7e7; }
+  .atlas .header h2 {
+    font-size: .3rem;
+    font-weight: bold; }
+  .atlas .header p {
+    font-size: .18rem;
+    color: #FB7BA2; }
+.atlas .content {
+  display: grid;
+  grid-template-columns: repeat(3, 2.5rem); }
+  .atlas .content li {
+    margin-bottom: 1px; }
+    .atlas .content li img {
+      width: 99%; }
 
 /*# sourceMappingURL=com.css.map */

@@ -140,9 +140,13 @@
         color: #444;
         line-height: .24rem;
         font-size: .15rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
     .text li p img {
         width: 100%;
+        vertical-align: top;
     }
     .footer{
         display: flex;
