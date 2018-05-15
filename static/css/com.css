@@ -1,3 +1,15 @@
+.collection {
+  position: absolute;
+  display: inline-block;
+  bottom: 0.3rem;
+  right: 0.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 50%; }
+  .collection img {
+    width: 100%;
+    height: 100%; }
+
 .doc .header {
   display: flex;
   align-items: center;
@@ -76,7 +88,7 @@
   height: 1px;
   background-color: #FFF;
   border-radius: 1px; }
-.doc .designation li span:nth-child(2) {
+.doc .designation li span:nth-child(2), .doc .designation .synthesis .main ul li:nth-last-child(2) span:nth-child(3), .synthesis .main ul .doc .designation li:nth-last-child(2) span:nth-child(3), .doc .designation .synthesis .main ul li:last-child span:nth-child(3), .synthesis .main ul .doc .designation li:last-child span:nth-child(3) {
   position: absolute;
   top: 3px;
   right: 3px;
@@ -161,5 +173,61 @@
     margin-bottom: 1px; }
     .atlas .content li img {
       width: 99%; }
+
+.synthesis .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1rem;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0rem 0.21rem 0.21rem -0.21rem rgba(169, 169, 169, 0.2), 0rem -0.21rem 0.21rem -0.1rem rgba(169, 169, 169, 0.2); }
+  .synthesis .header h3 {
+    font-size: .30rem;
+    margin-left: .5rem; }
+  .synthesis .header span {
+    font-size: .18rem;
+    margin-left: .5rem; }
+    .synthesis .header span i {
+      font-style: normal; }
+    .synthesis .header span i:nth-child(1) {
+      color: #74cff1; }
+    .synthesis .header span i:nth-child(2) {
+      color: #fc95b5;
+      margin-left: .05rem; }
+.synthesis .main {
+  position: relative;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #e8e8e8; }
+  .synthesis .main ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0.15rem; }
+    .synthesis .main ul li {
+      display: inline-block;
+      width: 2.46rem;
+      height: 2.46rem;
+      margin-left: 0.03rem;
+      margin-top: 0.03rem;
+      background: #74cff1; }
+      .synthesis .main ul li:nth-last-child(2), .synthesis .main ul li:last-child {
+        display: flex;
+        flex-direction: column;
+        background: #e9573f; }
+        .synthesis .main ul li:nth-last-child(2) span:nth-child(1) img, .synthesis .main ul li:last-child span:nth-child(1) img {
+          display: inline-block;
+          margin-top: 0.77rem;
+          margin-left: 0.87rem;
+          width: 0.65rem;
+          height: 0.65rem; }
+        .synthesis .main ul li:nth-last-child(2) span:nth-child(2), .synthesis .main ul li:last-child span:nth-child(2), .synthesis .main ul li:nth-last-child(2) span:nth-child(3), .synthesis .main ul li:last-child span:nth-child(3) {
+          font-size: 0.01rem;
+          color: white;
+          margin-left: 0.05rem; }
+      .synthesis .main ul li:last-child {
+        background: #39d8d8; }
+      .synthesis .main ul li img {
+        width: 100%;
+        height: 100%; }
 
 /*# sourceMappingURL=com.css.map */

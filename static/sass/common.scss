@@ -1,3 +1,16 @@
 @mixin border-bottom(){
     border-bottom: 1px solid #e7e7e7;
 }
+.collection {
+  position: absolute;
+  display: inline-block;
+  bottom: 0.3rem;
+  right: 0.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
