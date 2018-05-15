@@ -4,11 +4,61 @@
   bottom: 0.3rem;
   right: 0.2rem;
   width: 1.4rem;
-  height: 1.4rem;
-  border: 50%; }
+  height: 1.4rem; }
   .collection img {
     width: 100%;
     height: 100%; }
+
+.recommend {
+  padding: 0 .3rem; }
+  .recommend .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .35rem 0;
+    font-size: .24rem; }
+    .recommend .top .refresh {
+      color: #42BEEC; }
+      .recommend .top .refresh i {
+        vertical-align: middle;
+        margin-right: .1rem; }
+  .recommend .recommend-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 2.3rem); }
+    .recommend .recommend-cont li {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 99%;
+      height: 3.24rem;
+      border-radius: .1rem;
+      margin-bottom: 2px;
+      background: url("../img/34cee5ff5ab558fd5d3f9290d634b7f5.jpg") no-repeat center center/cover;
+      color: #FFF; }
+      .recommend .recommend-cont li .classification {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: .82rem;
+        height: .48rem;
+        vertical-align: -3px;
+        font-size: .24rem;
+        background-color: #CD8ADD;
+        text-align: center;
+        line-height: .48rem;
+        border-radius: 0  .1rem 0 .1rem; }
+      .recommend .recommend-cont li label {
+        font-size: .2rem; }
+      .recommend .recommend-cont li span {
+        display: block;
+        width: 100%;
+        padding-bottom: .1rem;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+        font-size: .18rem;
+        text-align: center;
+        color: #cecece; }
 
 .doc .header {
   display: flex;
@@ -17,10 +67,33 @@
   height: .68rem;
   padding: 0 .09rem;
   border-bottom: 1px solid #e8e8e8; }
-.doc .user-info {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; }
+  .doc .header .level {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: -.15rem;
+    bottom: -.02rem;
+    /* width: .2rem; */
+    height: .15rem;
+    padding: 0 .05rem;
+    background-color: #82cb5e;
+    border-radius: .15rem;
+    border: .01rem solid #FFF;
+    color: #FFF;
+    line-height: .15rem; }
+  .doc .header .level span {
+    display: inline-block;
+    font-size: .12rem;
+    vertical-align: top;
+    transform: scale(0.8); }
+  .doc .header .level label {
+    font-size: .11rem;
+    vertical-align: top; }
+  .doc .header .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
 .doc .head-portrait {
   position: relative;
   margin-right: .2rem; }
@@ -29,29 +102,6 @@
   height: .45rem;
   border-radius: 100%;
   display: block; }
-.doc .level {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  right: -.15rem;
-  bottom: -.02rem;
-  /* width: .2rem; */
-  height: .15rem;
-  padding: 0 .05rem;
-  background-color: #82cb5e;
-  border-radius: .15rem;
-  border: .01rem solid #FFF;
-  color: #FFF;
-  line-height: .15rem; }
-.doc .level span {
-  display: inline-block;
-  font-size: .12rem;
-  vertical-align: top;
-  transform: scale(0.8); }
-.doc .level label {
-  font-size: .11rem;
-  vertical-align: top; }
 .doc .name-time {
   padding-top: .05rem;
   margin-right: .08rem; }
@@ -133,24 +183,67 @@
 .doc .text li p img {
   width: 100%;
   vertical-align: top; }
-.doc .footer {
+.doc .tag {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: .18rem .18rem; }
-.doc .footer li {
+  padding: .18rem .18rem;
+  border-bottom: 1px solid #e7e7e7; }
+.doc .tag li {
   margin: .05rem;
   padding: .025rem .05rem;
   background-color: #e5e5e5;
   color: #202020;
   border-radius: .05rem;
   font-size: .12rem; }
-.doc .footer li .cont {
+.doc .tag li .cont {
   padding-right: .05rem;
   border-right: 1px solid #FFF; }
-.doc .footer li .num {
+.doc .tag li .num {
   padding-left: .05rem; }
+.doc .comments .top {
+  padding: 0 .18rem;
+  font-size: .12rem;
+  color: #42BEEC;
+  line-height: .34rem;
+  border-bottom: 1px solid #e7e7e7; }
+.doc .comments dl {
+  padding: .125rem .18rem; }
+  .doc .comments dl dt {
+    position: relative;
+    float: left;
+    width: 0.375rem;
+    height: 0.375rem; }
+    .doc .comments dl dt img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+    .doc .comments dl dt i {
+      position: absolute;
+      width: .13rem;
+      height: .13rem;
+      right: -.025rem;
+      bottom: 0;
+      background: url("../img/icon-star.png") no-repeat 0 0/cover; }
+  .doc .comments dl dd {
+    display: block;
+    padding-left: .5rem; }
+    .doc .comments dl dd .user-info span {
+      display: inline-block;
+      vertical-align: top; }
+    .doc .comments dl dd .user-info .info-cont {
+      font-size: 0; }
+      .doc .comments dl dd .user-info .info-cont .name {
+        font-size: .15rem; }
+      .doc .comments dl dd .user-info .info-cont .level b {
+        font-size: .06rem;
+        vertical-align: top; }
+      .doc .comments dl dd .user-info .info-cont .level em {
+        font-size: .1rem;
+        vertical-align: top; }
+      .doc .comments dl dd .user-info .info-cont .praise {
+        font-size: .1rem; }
 
 .synthesis .header {
   display: flex;

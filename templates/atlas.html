@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0,minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static//css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/css/com.css">
     <title>Document</title>
 </head>
@@ -16,8 +16,19 @@
             <p>售价 15节操</p>
         </div>
         <ul class="content">
-            <li v-for=" item in 10"><img src="../static/img/temp.png" alt=""></li>
+            <li v-for=" item in 20"><img src="../static/img/temp.png" alt=""></li>
+            <span class="collection" ><img src="../static/img/3.png" alt=""></span>
         </ul>
+        <div class="recommend">
+            <div class="top"><span>相关推荐</span><span class="refresh"><i class="iconfont icon-shuaxin"></i>换一组</span></div>
+            <ul class="recommend-cont">
+                <li v-for="item in 4">
+                    <i class="classification">图集</i>
+                    <label>おかえりなさーい</label>
+                    <span>美图 · 东方</span>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="../static/js/size.js"></script>
     <script src="../static/js/jquery-1.7.2.min.js"></script>
