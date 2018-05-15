@@ -504,4 +504,31 @@
         color: white;
         background: rgba(0, 0, 0, 0.5); }
 
+.atlas {
+  position: relative; }
+  .atlas .header {
+    padding-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1rem;
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: 0rem 0.21rem 0.21rem -0.21rem rgba(169, 169, 169, 0.2), 0rem -0.21rem 0.21rem -0.1rem rgba(169, 169, 169, 0.2);
+    border-bottom: 1px solid #e7e7e7; }
+    .atlas .header h2 {
+      font-size: .3rem; }
+    .atlas .header p {
+      font-size: .18rem;
+      color: #FB7BA2; }
+  .atlas .content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 2.5rem);
+    padding: .4rem 0;
+    border-bottom: 1px solid #e7e7e7; }
+    .atlas .content li {
+      margin-bottom: 1px; }
+      .atlas .content li img {
+        width: 99%; }
+
 /*# sourceMappingURL=com.css.map */
