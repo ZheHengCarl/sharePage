@@ -386,7 +386,6 @@
   .article .main ul li {
     display: flex;
     flex-direction: row;
-    height: 1.52rem;
     padding-left: 0.3rem;
     padding-bottom: 0.3rem;
     margin-top: 0.3rem;
