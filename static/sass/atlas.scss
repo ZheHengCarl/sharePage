@@ -1,15 +1,14 @@
 .atlas{
+    position: relative;
     .header{
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 1rem;
-        margin-bottom: .2rem;
         padding: 0 .95rem;
         @include border-bottom;
         h2{
             font-size: .3rem;
-            font-weight: bold;
         }
         p{
             font-size: .18rem;
@@ -17,8 +16,11 @@
         }
     }
     .content{
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 2.5rem);
+        padding: .4rem 0;
+        @include border-bottom;
         li{
             margin-bottom: 1px;
             img{
