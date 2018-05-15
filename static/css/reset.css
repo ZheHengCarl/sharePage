@@ -1,5 +1,5 @@
 * { -webkit-tap-highlight-color:transparent;}
-body,p,dd,h1,h2,h3,h4,h5,h6,b{ margin:0; font-weight:normal;}
+body,p,dd,h1,h2,h3,h4,h5,h6,b{ margin:0; font-weight:normal; font-family: 'pingfang',Arial, Helvetica, sans-serif;}
 dl { margin:0;}
 ul{ list-style:none; margin:0; padding:0;}
 ol{ list-style:none; margin:0; padding:0;}
@@ -13,3 +13,7 @@ li { -webkit-tap-highlight-color:transparent;}
 .ClearFix:after{ display:block; content:""; clear:both;}
 dl:after { display:block; content:""; clear:both;}
 [v-cloak] { display: none; }
+@font-face{
+    src: url('../font/PingFang-SC-Semibold.otf');
+    font-family: pingfang;
+}
