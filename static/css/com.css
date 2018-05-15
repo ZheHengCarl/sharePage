@@ -293,7 +293,7 @@
           width: 0.65rem;
           height: 0.65rem; }
         .synthesis .main ul li:nth-last-child(2) span:nth-child(2), .synthesis .main ul li:last-child span:nth-child(2), .synthesis .main ul li:nth-last-child(2) span:nth-child(3), .synthesis .main ul li:last-child span:nth-child(3) {
-          font-size: 0.01rem;
+          font-size: 0.2rem;
           color: white;
           margin-left: 0.05rem;
           margin-top: 0.35rem; }
@@ -332,7 +332,6 @@
   .novel .main ul li {
     display: flex;
     flex-direction: row;
-    height: 1.5rem;
     padding-left: 0.3rem;
     padding-bottom: 0.3rem;
     margin-top: 0.3rem;
