@@ -3,18 +3,12 @@
     @include header;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     h3 {
       font-size: 0.36rem;
-      margin-left: 2.7rem;
+      
     }
-    span {
-      display: inline-block;
-      margin-left: 1.3rem;
-      @extend h3;
-      a {
-        color: #42BEEC;
-      }
-    }
+    
   }
   .main {
     ul {
@@ -24,7 +18,7 @@
       li {
         display: flex;
         flex-direction: row;
-        height: 1.52rem;
+       
         padding-left: 0.3rem;
         padding-bottom: 0.3rem;
         margin-top: 0.3rem;
@@ -51,6 +45,7 @@
           }
          
           span:nth-child(2) {
+            font-weight:normal;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
@@ -63,6 +58,7 @@
 
           span:nth-child(3) {
             display: inline-block;
+            font-weight:normal;
             position: relative;
             color: #929292;
             width: 100%;
