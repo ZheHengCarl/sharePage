@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../static/css/reset.css">
-    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../static/css/com.css">
+  <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../static/css/com.css">
   <title>Document</title>
 </head>
+
 <body>
   <div id="comi" class="comic">
     <div class="header">
@@ -19,10 +21,30 @@
       </span>
     </div>
     <div class="main">
-        <ul>
-          <li v-for="items in 6"><img src="../static/img/1.png" alt=""><span> 第一话 木头人木头人木头人 </span><i>22P</i></li>
-        </ul>
-        <span class="collection" ><img src="../static/img/3.png" alt=""></span>
+      <ul>
+        <li v-for="items in 6">
+          <img src="../static/img/1.png" alt="">
+          <span> 第一话 木头人木头人木头人 </span>
+          <i>22P</i>
+        </li>
+      </ul>
+      <span class="collection">
+        <img src="../static/img/3.png" alt="">
+      </span>
+    </div>
+    <div class="recommend">
+      <div class="top">
+        <span>相关推荐</span>
+        <span class="refresh">
+          <i class="iconfont icon-shuaxin"></i>换一组</span>
+      </div>
+      <ul class="recommend-cont">
+        <li v-for="item in 4">
+          <i class="classification">图集</i>
+          <label>おかえりなさーい</label>
+          <span>美图 · 东方</span>
+        </li>
+      </ul>
     </div>
   </div>
 </body>
@@ -31,10 +53,11 @@
 <script src="../static/js/vue.js"></script>
 <script>
   var Comic = new Vue({
-    el:"#comi",
-    data:{
+    el: "#comi",
+    data: {
 
     }
   })
 </script>
+
 </html>

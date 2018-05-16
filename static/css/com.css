@@ -164,7 +164,7 @@
   background-color: #FFF;
   border-radius: 1px;
 }
-.doc .designation li span:nth-child(2), .doc .designation .synthesis .main ul li:nth-last-child(2) span:nth-child(3), .synthesis .main ul .doc .designation li:nth-last-child(2) span:nth-child(3), .doc .designation .synthesis .main ul li:last-child span:nth-child(3), .synthesis .main ul .doc .designation li:last-child span:nth-child(3) {
+.doc .designation li span:nth-child(2), .doc .designation .synthesis .main ul li:nth-last-child(2) span:nth-child(3), .synthesis .main ul .doc .designation li:nth-last-child(2) span:nth-child(3), .doc .designation .synthesis .main ul li:last-child span:nth-child(3), .synthesis .main ul .doc .designation li:last-child span:nth-child(3), .doc .designation .center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(3), .center .header .bag .big .bottom ul .doc .designation li:nth-child(2) span:nth-child(3), .doc .designation .center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(4), .center .header .bag .big .bottom ul .doc .designation li:nth-child(2) span:nth-child(4) {
   position: absolute;
   top: 3px;
   right: 3px;
@@ -380,7 +380,7 @@
   width: 0.65rem;
   height: 0.65rem;
 }
-.synthesis .main ul li:nth-last-child(2) span:nth-child(2), .synthesis .main ul li:last-child span:nth-child(2), .synthesis .main ul li:nth-last-child(2) span:nth-child(3), .synthesis .main ul li:last-child span:nth-child(3) {
+.synthesis .main ul li:nth-last-child(2) span:nth-child(2), .synthesis .main ul li:last-child span:nth-child(2), .synthesis .main ul li:nth-last-child(2) span:nth-child(3), .synthesis .main ul li:last-child span:nth-child(3), .synthesis .main .center .header .bag .big .bottom ul li:nth-last-child(2) li:nth-child(2) span:nth-child(3), .center .header .bag .big .bottom .synthesis .main ul li:nth-last-child(2) li:nth-child(2) span:nth-child(3), .synthesis .main .center .header .bag .big .bottom ul li:nth-child(2) li:nth-last-child(2) span:nth-child(3), .center .header .bag .big .bottom .synthesis .main ul li:nth-child(2) li:nth-last-child(2) span:nth-child(3), .synthesis .main .center .header .bag .big .bottom ul li:last-child li:nth-child(2) span:nth-child(3), .center .header .bag .big .bottom .synthesis .main ul li:last-child li:nth-child(2) span:nth-child(3), .synthesis .main .center .header .bag .big .bottom ul li:nth-child(2) li:last-child span:nth-child(3), .center .header .bag .big .bottom .synthesis .main ul li:nth-child(2) li:last-child span:nth-child(3), .synthesis .main .center .header .bag .big .bottom ul li:nth-last-child(2) li:nth-child(2) span:nth-child(4), .center .header .bag .big .bottom .synthesis .main ul li:nth-last-child(2) li:nth-child(2) span:nth-child(4), .synthesis .main .center .header .bag .big .bottom ul li:nth-child(2) li:nth-last-child(2) span:nth-child(4), .center .header .bag .big .bottom .synthesis .main ul li:nth-child(2) li:nth-last-child(2) span:nth-child(4), .synthesis .main .center .header .bag .big .bottom ul li:last-child li:nth-child(2) span:nth-child(4), .center .header .bag .big .bottom .synthesis .main ul li:last-child li:nth-child(2) span:nth-child(4), .synthesis .main .center .header .bag .big .bottom ul li:nth-child(2) li:last-child span:nth-child(4), .center .header .bag .big .bottom .synthesis .main ul li:nth-child(2) li:last-child span:nth-child(4) {
   font-size: 0.2rem;
   color: white;
   margin-left: 0.05rem;
@@ -423,6 +423,11 @@
   color: #fc95b5;
   margin-left: .05rem;
 }
+.novel .main {
+  position: relative;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #e8e8e8;
+}
 .novel .main ul {
   display: flex;
   flex-direction: column;
@@ -453,13 +458,13 @@
   margin: 0;
   font-size: 0.25rem;
 }
-.novel .main ul li .right span:nth-child(2), .novel .synthesis .main ul li:nth-last-child(2) .right span:nth-child(3), .synthesis .novel .main ul li:nth-last-child(2) .right span:nth-child(3), .novel .synthesis .main ul li:last-child .right span:nth-child(3), .synthesis .novel .main ul li:last-child .right span:nth-child(3) {
+.novel .main ul li .right span:nth-child(2), .novel .synthesis .main ul li:nth-last-child(2) .right span:nth-child(3), .synthesis .novel .main ul li:nth-last-child(2) .right span:nth-child(3), .novel .synthesis .main ul li:last-child .right span:nth-child(3), .synthesis .novel .main ul li:last-child .right span:nth-child(3), .novel .main .center .header .bag .big .bottom ul li:nth-child(2) .right span:nth-child(3), .center .header .bag .big .bottom .novel .main ul li:nth-child(2) .right span:nth-child(3), .novel .main .center .header .bag .big .bottom ul li:nth-child(2) .right span:nth-child(4), .center .header .bag .big .bottom .novel .main ul li:nth-child(2) .right span:nth-child(4) {
   display: inline-block;
   color: #929292;
   margin-top: 0.1rem;
   font-size: 0.2rem;
 }
-.novel .main ul li .right span:nth-child(2) i:nth-child(2), .novel .synthesis .main ul li:nth-last-child(2) .right span:nth-child(3) i:nth-child(2), .synthesis .novel .main ul li:nth-last-child(2) .right span:nth-child(3) i:nth-child(2), .novel .synthesis .main ul li:last-child .right span:nth-child(3) i:nth-child(2), .synthesis .novel .main ul li:last-child .right span:nth-child(3) i:nth-child(2) {
+.novel .main ul li .right span:nth-child(2) i:nth-child(2), .novel .synthesis .main ul li:nth-last-child(2) .right span:nth-child(3) i:nth-child(2), .synthesis .novel .main ul li:nth-last-child(2) .right span:nth-child(3) i:nth-child(2), .novel .synthesis .main ul li:last-child .right span:nth-child(3) i:nth-child(2), .synthesis .novel .main ul li:last-child .right span:nth-child(3) i:nth-child(2), .novel .main .center .header .bag .big .bottom ul li:nth-child(2) .right span:nth-child(3) i:nth-child(2), .center .header .bag .big .bottom .novel .main ul li:nth-child(2) .right span:nth-child(3) i:nth-child(2), .novel .main .center .header .bag .big .bottom ul li:nth-child(2) .right span:nth-child(4) i:nth-child(2), .center .header .bag .big .bottom .novel .main ul li:nth-child(2) .right span:nth-child(4) i:nth-child(2) {
   display: inline-block;
   margin-left: 0.3rem;
 }
@@ -522,7 +527,7 @@
   font-weight: bold;
   color: #E9573F;
 }
-.article .main ul li .right span:nth-child(2), .article .synthesis .main ul li:nth-last-child(2) .right span:nth-child(3), .synthesis .article .main ul li:nth-last-child(2) .right span:nth-child(3), .article .synthesis .main ul li:last-child .right span:nth-child(3), .synthesis .article .main ul li:last-child .right span:nth-child(3) {
+.article .main ul li .right span:nth-child(2), .article .synthesis .main ul li:nth-last-child(2) .right span:nth-child(3), .synthesis .article .main ul li:nth-last-child(2) .right span:nth-child(3), .article .synthesis .main ul li:last-child .right span:nth-child(3), .synthesis .article .main ul li:last-child .right span:nth-child(3), .article .main .center .header .bag .big .bottom ul li:nth-child(2) .right span:nth-child(3), .center .header .bag .big .bottom .article .main ul li:nth-child(2) .right span:nth-child(3), .article .main .center .header .bag .big .bottom ul li:nth-child(2) .right span:nth-child(4), .center .header .bag .big .bottom .article .main ul li:nth-child(2) .right span:nth-child(4) {
   font-weight: normal;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -668,6 +673,338 @@
 }
 .atlas .content li img {
   width: 99%;
+}
+
+.center .header {
+  position: relative;
+  height: 6rem;
+  width: 7.5rem;
+  background: url(../img/backg-big.png);
+  background-size: 100% 100%;
+}
+.center .header .bag {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.2rem;
+  width: 7.02rem;
+  height: 3.56rem;
+  background: url(../img/bacg-samll.png);
+  background-size: 100% 100%;
+}
+.center .header .bag .big {
+  width: 6.33rem;
+}
+.center .header .bag .big .top {
+  display: flex;
+  flex-direction: row;
+}
+.center .header .bag .big .top span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+  background: url(../img/1.png);
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+.center .header .bag .big .top span img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.center .header .bag .big .top dl {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.34rem;
+  margin-left: 0.2rem;
+}
+.center .header .bag .big .top dl dd:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.center .header .bag .big .top dl dd:nth-child(1) i:nth-child(1) {
+  font-size: 0.36rem;
+}
+.center .header .bag .big .top dl dd:nth-child(1) i:nth-child(2) {
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-left: 0.2rem;
+}
+.center .header .bag .big .top dl dd:nth-child(1) i:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+}
+.center .header .bag .big .top dl dd:nth-child(1) i:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: #F4D347;
+  padding: 0rem 0.05rem;
+  padding-left: 0.3rem;
+  border-radius: 0.03rem;
+  font-size: 0.21rem;
+  color: white;
+  margin-left: 0.2rem;
+}
+.center .header .bag .big .top dl dd:nth-child(1) i:nth-child(3) b {
+  position: absolute;
+  display: inline-block;
+  transform: scale(0.7, 0.6);
+  left: 0.04rem;
+  bottom: -0.03rem;
+  font-style: italic;
+}
+.center .header .bag .big .top dl dd:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.05rem;
+}
+.center .header .bag .big .top dl dd:nth-child(2) a {
+  color: black;
+}
+.center .header .bag .big .top dl dd:nth-child(2) i {
+  font-size: 0.24rem;
+}
+.center .header .bag .big .top dl dd:nth-child(2) i:not(:first-child) {
+  margin-left: 0.3rem;
+}
+.center .header .bag .big .top dl dd:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-top: 0.15rem;
+  color: white;
+  background: #F2CC2C;
+  border-radius: 0.22rem 0.22rem;
+  padding-right: 0.2rem;
+}
+.center .header .bag .big .top dl dd:nth-child(3) a {
+  color: white;
+}
+.center .header .bag .big .top dl dd:nth-child(3) span {
+  display: inline-block;
+  position: absolute;
+  left: -0.2rem;
+  bottom: 0;
+  width: 0.46rem;
+  height: 0.45rem;
+  background: url(../img/icon-crown.png) left no-repeat;
+  background-size: 100% 100%;
+}
+.center .header .bag .big .top dl dd:nth-child(3) i {
+  font-size: 0.2rem;
+}
+.center .header .bag .big .top dl dd:nth-child(3) :nth-child(2) {
+  margin-left: 0.6rem;
+}
+.center .header .bag .big .top dl dd:nth-child(3) :nth-child(3) {
+  margin-left: 0.2rem;
+}
+.center .header .bag .big .top dl dd:nth-child(3) :nth-child(4) {
+  margin-left: 0.1rem;
+  width: 0.09rem;
+  height: 0.18rem;
+}
+.center .header .bag .big .top dl dd:nth-child(3) :nth-child(4) img {
+  transform: scale(1.2, 1.2);
+  width: 100%;
+  height: 100%;
+}
+.center .header .bag .big .bottom ul {
+  display: flex;
+  flex-direction: column;
+}
+.center .header .bag .big .bottom ul li:nth-child(1) {
+  margin: 0.2rem;
+  margin-top: 0.05rem;
+  margin-bottom: 0rem;
+}
+.center .header .bag .big .bottom ul li:nth-child(1) P {
+  font-size: 0.24rem;
+}
+.center .header .bag .big .bottom ul li:nth-child(2) {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.2rem;
+  margin-top: 0.07rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(1) {
+  position: absolute;
+  left: 0rem;
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+}
+.center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(1) :nth-child(1) {
+  font-size: 0.24rem;
+  color: #42BEEC;
+}
+.center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(1) :nth-child(2) {
+  display: flex;
+}
+.center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(1) :nth-child(2) b {
+  display: inline-block;
+  transform: scale(0.8, 0.8);
+  font-size: 0.18rem;
+  color: #D7D7D7;
+  margin-left: -0.2rem;
+}
+.center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(2), .center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(3), .center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(4) {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.2rem;
+}
+.center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(2) img, .center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(3) img, .center .header .bag .big .bottom ul li:nth-child(2) span:nth-child(4) img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.center .nav ul {
+  display: flex;
+  flex-direction: row;
+  height: 0.8rem;
+  align-items: center;
+  border-bottom: 1px solid #e7e7e7;
+  color: #42BEEC;
+}
+.center .nav ul li {
+  display: flex;
+  align-items: center;
+  height: 0.75rem;
+  width: 0.6rem;
+  margin-left: 1.3rem;
+  padding-bottom: 0.05rem;
+  font-size: 0.3rem;
+}
+.center .nav ul li:hover {
+  border-bottom: 0.05rem solid #42BEEC;
+  padding-bottom: 0rem;
+}
+.center .visitors {
+  margin-top: 0.5rem;
+  color: #42BEEC;
+}
+.center .visitors ul {
+  display: flex;
+  flex-direction: column;
+}
+.center .visitors ul li:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.center .visitors ul li:nth-child(1) span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.24rem;
+}
+.center .visitors ul li:nth-child(1) span:nth-child(1) {
+  margin-left: 0.2rem;
+}
+.center .visitors ul li:nth-child(1) span:nth-child(1) i {
+  width: 0.28rem;
+  height: 0.3rem;
+  margin-right: 0.2rem;
+}
+.center .visitors ul li:nth-child(1) span:nth-child(1) i img {
+  width: 100%;
+  height: 100%;
+}
+.center .visitors ul li:nth-child(1) span:nth-child(2), .center .visitors .synthesis .main ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3), .synthesis .main .center .visitors ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3), .center .visitors .synthesis .main ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3), .synthesis .main .center .visitors ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3), .center .visitors .synthesis .main ul li:nth-child(1) li:last-child span:nth-child(3), .synthesis .main .center .visitors ul li:nth-child(1) li:last-child span:nth-child(3), .center .visitors .synthesis .main ul li:last-child li:nth-child(1) span:nth-child(3), .synthesis .main .center .visitors ul li:last-child li:nth-child(1) span:nth-child(3), .center .visitors .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(3), .center .header .bag .big .bottom .visitors ul li:nth-child(1) li:nth-child(2) span:nth-child(3), .center .visitors .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(3), .center .header .bag .big .bottom .visitors ul li:nth-child(2) li:nth-child(1) span:nth-child(3), .center .visitors .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(4), .center .header .bag .big .bottom .visitors ul li:nth-child(1) li:nth-child(2) span:nth-child(4), .center .visitors .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(4), .center .header .bag .big .bottom .visitors ul li:nth-child(2) li:nth-child(1) span:nth-child(4) {
+  position: absolute;
+  right: 0.2rem;
+}
+.center .visitors ul li:nth-child(1) span:nth-child(2) i, .center .visitors .synthesis .main ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3) i, .synthesis .main .center .visitors ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3) i, .center .visitors .synthesis .main ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3) i, .synthesis .main .center .visitors ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3) i, .center .visitors .synthesis .main ul li:nth-child(1) li:last-child span:nth-child(3) i, .synthesis .main .center .visitors ul li:nth-child(1) li:last-child span:nth-child(3) i, .center .visitors .synthesis .main ul li:last-child li:nth-child(1) span:nth-child(3) i, .synthesis .main .center .visitors ul li:last-child li:nth-child(1) span:nth-child(3) i, .center .visitors .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(3) i, .center .header .bag .big .bottom .visitors ul li:nth-child(1) li:nth-child(2) span:nth-child(3) i, .center .visitors .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(3) i, .center .header .bag .big .bottom .visitors ul li:nth-child(2) li:nth-child(1) span:nth-child(3) i, .center .visitors .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(4) i, .center .header .bag .big .bottom .visitors ul li:nth-child(1) li:nth-child(2) span:nth-child(4) i, .center .visitors .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(4) i, .center .header .bag .big .bottom .visitors ul li:nth-child(2) li:nth-child(1) span:nth-child(4) i {
+  width: 0.09rem;
+  height: 0.18rem;
+  margin-left: 0.1rem;
+}
+.center .visitors ul li:nth-child(1) span:nth-child(2) i img, .center .visitors .synthesis .main ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3) i img, .synthesis .main .center .visitors ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3) i img, .center .visitors .synthesis .main ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3) i img, .synthesis .main .center .visitors ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3) i img, .center .visitors .synthesis .main ul li:nth-child(1) li:last-child span:nth-child(3) i img, .synthesis .main .center .visitors ul li:nth-child(1) li:last-child span:nth-child(3) i img, .center .visitors .synthesis .main ul li:last-child li:nth-child(1) span:nth-child(3) i img, .synthesis .main .center .visitors ul li:last-child li:nth-child(1) span:nth-child(3) i img, .center .visitors .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(3) i img, .center .header .bag .big .bottom .visitors ul li:nth-child(1) li:nth-child(2) span:nth-child(3) i img, .center .visitors .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(3) i img, .center .header .bag .big .bottom .visitors ul li:nth-child(2) li:nth-child(1) span:nth-child(3) i img, .center .visitors .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(4) i img, .center .header .bag .big .bottom .visitors ul li:nth-child(1) li:nth-child(2) span:nth-child(4) i img, .center .visitors .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(4) i img, .center .header .bag .big .bottom .visitors ul li:nth-child(2) li:nth-child(1) span:nth-child(4) i img {
+  transform: scale(1.2, 1.2);
+  width: 100%;
+  height: 100%;
+}
+.center .visitors ul li:nth-child(2) {
+  margin-top: 0.4rem;
+}
+.center .visitors ul li:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.center .visitors ul li:nth-child(2) ul li {
+  width: 0.72rem;
+  height: 0.72rem;
+  margin-left: 0.2rem;
+  margin-top: 0rem;
+}
+.center .visitors ul li:nth-child(2) ul li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.center .image {
+  margin-top: 0.5rem;
+  color: #42BEEC;
+}
+.center .image ul {
+  display: flex;
+  flex-direction: column;
+}
+.center .image ul li:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.center .image ul li:nth-child(1) span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.24rem;
+}
+.center .image ul li:nth-child(1) span:nth-child(1) {
+  margin-left: 0.2rem;
+}
+.center .image ul li:nth-child(1) span:nth-child(1) i {
+  width: 0.28rem;
+  height: 0.3rem;
+  margin-right: 0.2rem;
+}
+.center .image ul li:nth-child(1) span:nth-child(1) i img {
+  width: 100%;
+  height: 100%;
+}
+.center .image ul li:nth-child(1) span:nth-child(2), .center .image .synthesis .main ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3), .synthesis .main .center .image ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3), .center .image .synthesis .main ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3), .synthesis .main .center .image ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3), .center .image .synthesis .main ul li:nth-child(1) li:last-child span:nth-child(3), .synthesis .main .center .image ul li:nth-child(1) li:last-child span:nth-child(3), .center .image .synthesis .main ul li:last-child li:nth-child(1) span:nth-child(3), .synthesis .main .center .image ul li:last-child li:nth-child(1) span:nth-child(3), .center .image .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(3), .center .header .bag .big .bottom .image ul li:nth-child(1) li:nth-child(2) span:nth-child(3), .center .image .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(3), .center .header .bag .big .bottom .image ul li:nth-child(2) li:nth-child(1) span:nth-child(3), .center .image .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(4), .center .header .bag .big .bottom .image ul li:nth-child(1) li:nth-child(2) span:nth-child(4), .center .image .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(4), .center .header .bag .big .bottom .image ul li:nth-child(2) li:nth-child(1) span:nth-child(4) {
+  position: absolute;
+  right: 0.2rem;
+}
+.center .image ul li:nth-child(1) span:nth-child(2) i, .center .image .synthesis .main ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3) i, .synthesis .main .center .image ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3) i, .center .image .synthesis .main ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3) i, .synthesis .main .center .image ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3) i, .center .image .synthesis .main ul li:nth-child(1) li:last-child span:nth-child(3) i, .synthesis .main .center .image ul li:nth-child(1) li:last-child span:nth-child(3) i, .center .image .synthesis .main ul li:last-child li:nth-child(1) span:nth-child(3) i, .synthesis .main .center .image ul li:last-child li:nth-child(1) span:nth-child(3) i, .center .image .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(3) i, .center .header .bag .big .bottom .image ul li:nth-child(1) li:nth-child(2) span:nth-child(3) i, .center .image .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(3) i, .center .header .bag .big .bottom .image ul li:nth-child(2) li:nth-child(1) span:nth-child(3) i, .center .image .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(4) i, .center .header .bag .big .bottom .image ul li:nth-child(1) li:nth-child(2) span:nth-child(4) i, .center .image .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(4) i, .center .header .bag .big .bottom .image ul li:nth-child(2) li:nth-child(1) span:nth-child(4) i {
+  width: 0.09rem;
+  height: 0.18rem;
+  margin-left: 0.1rem;
+}
+.center .image ul li:nth-child(1) span:nth-child(2) i img, .center .image .synthesis .main ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3) i img, .synthesis .main .center .image ul li:nth-child(1) li:nth-last-child(2) span:nth-child(3) i img, .center .image .synthesis .main ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3) i img, .synthesis .main .center .image ul li:nth-last-child(2) li:nth-child(1) span:nth-child(3) i img, .center .image .synthesis .main ul li:nth-child(1) li:last-child span:nth-child(3) i img, .synthesis .main .center .image ul li:nth-child(1) li:last-child span:nth-child(3) i img, .center .image .synthesis .main ul li:last-child li:nth-child(1) span:nth-child(3) i img, .synthesis .main .center .image ul li:last-child li:nth-child(1) span:nth-child(3) i img, .center .image .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(3) i img, .center .header .bag .big .bottom .image ul li:nth-child(1) li:nth-child(2) span:nth-child(3) i img, .center .image .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(3) i img, .center .header .bag .big .bottom .image ul li:nth-child(2) li:nth-child(1) span:nth-child(3) i img, .center .image .header .bag .big .bottom ul li:nth-child(1) li:nth-child(2) span:nth-child(4) i img, .center .header .bag .big .bottom .image ul li:nth-child(1) li:nth-child(2) span:nth-child(4) i img, .center .image .header .bag .big .bottom ul li:nth-child(2) li:nth-child(1) span:nth-child(4) i img, .center .header .bag .big .bottom .image ul li:nth-child(2) li:nth-child(1) span:nth-child(4) i img {
+  transform: scale(1.2, 1.2);
+  width: 100%;
+  height: 100%;
+}
+
+.bor-bu {
+  border-bottom: 0.1rem solid #42BEEC;
 }
 
 /*# sourceMappingURL=com.css.map */
