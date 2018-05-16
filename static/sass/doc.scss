@@ -216,9 +216,20 @@
                             font-size: .15rem;
                         }
                         .level{
+                            display: inline-block;
+                            margin-left: .04rem;
+                            padding-right: .05rem;
+                            background-color: #F4D347;
+                            text-align: center;
+                            line-height: .2rem;
+                            color: #FFF;
+                            border-radius: .03rem;
                             b{
+                                display: inline-block;
                                 font-size: .06rem;
                                 vertical-align: top;
+                                font-style: oblique;
+                                transform: scale(.6) translateY(3px);
                             }
                             em{
                                 font-size: .1rem;
@@ -226,7 +237,20 @@
                             }
                         }
                         .praise{
+                            float: right;
+                            margin-top: .03rem;
                             font-size: .1rem;
+                            b{
+                                color: #42BEEC;
+                                font-size: .1rem;
+                                margin-right: .05rem;
+                            }
+                            i{
+                                display: inline-block;
+                                width: .14rem;
+                                height: .14rem;
+                                background: url('../img/praise-no.png') no-repeat 0 0 / cover;
+                            }
                         }
                     }
                     
