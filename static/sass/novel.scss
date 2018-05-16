@@ -21,6 +21,9 @@
     }
   }
   .main {
+    position: relative;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #e8e8e8;
     ul {
       display: flex;
       flex-direction: column;

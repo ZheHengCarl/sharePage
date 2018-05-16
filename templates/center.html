@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../static/css/com.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="cente" class="center">
+    <div class="header">
+      <div class="bag">
+        <div class="big">
+          <div class="top">
+            <span>
+              <img src="../static/img/icon-border.png" alt="">
+            </span>
+            <dl>
+              <dd>
+                <i>维多利亚</i>
+                <i>
+                  <img src="../static/img/icon-sex.png" alt="">
+                </i>
+                <i>
+                  <b>Lv</b>13</i>
+              </dd>
+              <dd>
+                <i> <a href="#">231关注</a> </i>
+                <i> <a href="#">5242粉丝</a> </i>
+                <i> <a href="#">61234节操</a> </i>
+              </dd>
+              <dd>
+                <span></span>
+                <i> <a href="#">kira声望值:4241</a> </i>
+                <i> <a href="#">排名:421</a> </i>
+                <i>
+                  <img src="../static/img/right.png" alt="">
+                </i>
+              </dd>
+            </dl>
+          </div>
+          <div class="bottom">
+            <ul>
+              <li>
+                <p>我只是一个小小搬运工，欢迎大家关注，在我的书包内可以会的意外惊喜哦~</p>
+              </li>
+              <li>
+                <span>
+                  <i>kira ID: 2411243</i>
+                  <i>
+                    <b>入学日:2017-11-23</b>
+                  </i>
+                </span>
+                <span>
+                  <a href="#"><img src="../static/img/icon-bz.png" alt=""></a>
+                  
+                </span>
+                <span>
+                  <a href="#"><img src="../static/img/icon-dj.png" alt=""></a>
+                  
+                </span>
+                <span>
+                  <a href="#"><img src="../static/img/icon-heng.png" alt=""></a>
+                  
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="visitors">
+      <ul>
+        <li>
+          <span>
+            <i><img src="../static/img/icon-jz.png" alt=""></i>
+            访客231位
+          </span>
+          <span>
+            查看更多
+            <i><img src="../static/img/icon-blueRight.png" alt=""></i>
+          </span>
+        </li>
+        <li> 
+          <ul>
+            <li v-for="items in 8"><img src="../static/img/1.png" alt=""></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="image">
+      <ul>
+        <li>
+            <span>
+                <i><img src="../static/img/icon-people.png" alt=""></i>
+                校园形象
+              </span>
+              <span>
+                  历史形象
+                  <i><img src="../static/img/icon-blueRight.png" alt=""></i>
+                </span>
+        </li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="main"></div>
+    <div class="floot"></div>
+  </div>
+</body>
+<script src="../static/js/size.js"></script>
+<script src="../static/js/jquery-2.1.3.min.js"></script>
+<script src="../static/js/vue.js"></script>
+<script>
+  var Center = new Vue({
+    el:"#cente",
+    data:{
+
+    }
+  })
+</script>
+</html>
