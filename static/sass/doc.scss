@@ -210,10 +210,15 @@
                         display: inline-block;
                         vertical-align: top;
                     }
+                    p{
+                        margin-bottom: .05rem;
+                        font-size: .15rem;
+                    }
                     .info-cont{
                         font-size: 0;
                         .name{
                             font-size: .15rem;
+                            font-weight: bold;
                         }
                         .level{
                             display: inline-block;
@@ -241,7 +246,7 @@
                             margin-top: .03rem;
                             font-size: .1rem;
                             b{
-                                color: #42BEEC;
+                                color: #929292;
                                 font-size: .1rem;
                                 margin-right: .05rem;
                             }
@@ -252,8 +257,37 @@
                                 background: url('../img/praise-no.png') no-repeat 0 0 / cover;
                             }
                         }
+                        .active{
+                            b{
+                                color: #42BEEC;
+                            }
+                            i{
+                                background: url('../img/praise-yes.png') no-repeat 0 0 / cover;
+                            }
+                        }
                     }
-                    
+                    .text-img{
+                        img{
+                            width: 50%;
+                        }
+                    }
+                    .floor-time{
+                        padding-bottom: .1rem;
+                        color: #929292;
+                        font-size: .12rem;
+                        @include border-bottom;
+                        .floor{
+                            &:after{
+                                content: "·";
+                                display: inline-block;
+                                margin: 0 .03rem;
+                                vertical-align: middle;
+                            }
+                        }
+                        span{
+                            vertical-align: top;
+                        }
+                    }
                 }
                 
             }

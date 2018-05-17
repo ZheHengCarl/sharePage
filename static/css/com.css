@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .collection {
   position: absolute;
   display: inline-block;
@@ -232,10 +233,14 @@
     .doc .comments dl dd .user-info span {
       display: inline-block;
       vertical-align: top; }
+    .doc .comments dl dd .user-info p {
+      margin-bottom: .05rem;
+      font-size: .15rem; }
     .doc .comments dl dd .user-info .info-cont {
       font-size: 0; }
       .doc .comments dl dd .user-info .info-cont .name {
-        font-size: .15rem; }
+        font-size: .15rem;
+        font-weight: bold; }
       .doc .comments dl dd .user-info .info-cont .level {
         display: inline-block;
         margin-left: .04rem;
@@ -259,7 +264,7 @@
         margin-top: .03rem;
         font-size: .1rem; }
         .doc .comments dl dd .user-info .info-cont .praise b {
-          color: #42BEEC;
+          color: #929292;
           font-size: .1rem;
           margin-right: .05rem; }
         .doc .comments dl dd .user-info .info-cont .praise i {
@@ -267,6 +272,24 @@
           width: .14rem;
           height: .14rem;
           background: url("../img/praise-no.png") no-repeat 0 0/cover; }
+      .doc .comments dl dd .user-info .info-cont .active b {
+        color: #42BEEC; }
+      .doc .comments dl dd .user-info .info-cont .active i {
+        background: url("../img/praise-yes.png") no-repeat 0 0/cover; }
+    .doc .comments dl dd .user-info .text-img img {
+      width: 50%; }
+    .doc .comments dl dd .user-info .floor-time {
+      padding-bottom: .1rem;
+      color: #929292;
+      font-size: .12rem;
+      border-bottom: 1px solid #e7e7e7; }
+      .doc .comments dl dd .user-info .floor-time .floor:after {
+        content: "·";
+        display: inline-block;
+        margin: 0 .03rem;
+        vertical-align: middle; }
+      .doc .comments dl dd .user-info .floor-time span {
+        vertical-align: top; }
 
 .synthesis .header {
   display: flex;
