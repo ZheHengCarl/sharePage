@@ -14,6 +14,6 @@ li { -webkit-tap-highlight-color:transparent;}
 dl:after { display:block; content:""; clear:both;}
 [v-cloak] { display: none; }
 @font-face{
-    src: url('../font/PingFang-SC-Semibold.otf');
+    src: url('../font/pingfang-re.TTF');
     font-family: pingfang;
 }
