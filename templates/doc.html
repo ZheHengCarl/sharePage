@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1.0,minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/iconfont.css">
     <link rel="stylesheet" href="../static/css/com.css">
     <title>Document</title>
 </head>
 <body>
     <div id="app" v-cloak class="doc">
+        <div class="wu-app"><img src="../static/img/wU-app.png" alt=""></div>
         <div class="header">
             <div class="user-info">
                 <div class="head-portrait">
@@ -34,6 +36,27 @@
                     <p v-if="item.type == 'DOC_IMAGE'"><img :src=" imgUrl + item.data.path" alt=""></p>
                 </li>
             </ul>
+            <div class="bag">
+                <dl>
+                    <dt>
+                        <i class="classification">图集</i>
+                    </dt>
+                    <dd>
+                        <h2>あけましておめでとざいます！</h2>
+                        <div>
+                            <div><span style="background: #39D8D8;">美少女</span><span style="background: #93D856;">可爱的兔子</span></div>
+                            <div class="uesrinfo"><img src="../static/img/temp2.png" alt="">ちょこ庵</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="music">
+                <div><i class="iconfont icon-bofang"></i></div>
+                <div class="info">
+                    <div class="m-name">青空のラプソディ</div>
+                    <div class="m-time"><span>01:30</span> / <span>03:23</span></div>
+                </div>
+            </div>
         </div>
         <ul class="tag">
             <li v-for="item in 20"><span class="cont">{{item}}</span><span class="num">{{item}}</span></li>
@@ -92,7 +115,7 @@
                             app.postDatas.createTime = app.postDatas.createTime.split(' ').shift();
                         }
                     });
-                },
+            },
                 //获取评论信息
                 getcomments: function () {
                     $.ajax({

@@ -56,19 +56,6 @@
       margin-bottom: 2px;
       background: url('../img/34cee5ff5ab558fd5d3f9290d634b7f5.jpg') no-repeat center center / cover;
       color: #FFF;
-      .classification{
-        position: absolute;
-        top: 0;
-        right: 0px;
-        width: .82rem;
-        height: .48rem;
-        vertical-align: -3px;
-        font-size: .24rem;
-        background-color: #CD8ADD;
-        text-align: center;
-        line-height: .48rem;
-        border-radius: 0  .1rem 0 .1rem;
-      }
       label{
         font-size: .2rem;
       }
@@ -83,4 +70,17 @@
       }
     }
   }
+}
+.classification{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: .82rem;
+  height: .48rem;
+  vertical-align: -3px;
+  font-size: .24rem;
+  background-color: #CD8ADD;
+  text-align: center;
+  line-height: .48rem;
+  border-radius: 0  .1rem 0 .1rem;
 }

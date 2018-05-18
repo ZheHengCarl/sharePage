@@ -1,10 +1,14 @@
 .doc{
+    .wu-app{
+        font-size: 0;
+        img{ width: 100%;}
+    }
     .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: .68rem;
-        padding: 0 .09rem;
+        padding: 0 .15rem 0 .1rem;
         border-bottom: 1px solid #e8e8e8;
         .level{
             position: absolute;
@@ -128,7 +132,7 @@
         transform: scale(.75);
     }
     .content{
-        padding:  .28rem .18rem;
+        padding:  .14rem .09rem;
         border-bottom: 1px solid #e7e7e7;
     }
     .content .title {
@@ -292,6 +296,97 @@
                 
             }
         }
-        
+    }
+    .bag{
+        margin-top:.3rem;
+        padding: .08rem;
+        border-radius: .08rem;
+        background-color: #F6F6F6;
+        dl{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: .95rem;
+            dt{
+                position: relative;
+                width: 1.1rem;
+                height: 100%;
+                background: url('../img/temp.png') no-repeat 0 0 / cover;
+                border-radius: .05rem;
+                .classification{
+                    position: absolute;
+                    top: 0;
+                    right: 0px;
+                    width: .41rem;
+                    height: .24rem;
+                    vertical-align: -3px;
+                    font-size: .24rem;
+                    background-color: #CD8ADD;
+                    text-align: center;
+                    line-height: .24rem;
+                    border-radius: 0  .05rem 0 .05rem;
+                    color: #FFF;
+                    font-size: .1rem;
+                  }
+            }
+            dd{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2{
+                    font-size: .15rem;
+                }
+                >div{
+                    >div{
+                        margin: .05rem 0;
+                    }
+                    font-size: 0;
+                    span{
+                        display: inline-block;
+                        margin-right: .08rem;
+                        padding: .04rem;
+                        border-radius: .05rem;
+                        font-size: .09rem;
+                        color: #FFF;
+                    }
+                }
+                .uesrinfo{
+                    font-size: .12rem;
+                    color: #929292;
+                    img{
+                        width: .13rem;
+                        height:.13rem;
+                        margin-right: .05rem;
+                        border-radius: 50%;
+                        vertical-align: -2px;
+                    }
+                }
+            }
+        }
+    }
+    .music{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: .35rem;
+        margin: .3rem 0 .15rem;
+        padding: .13rem .17rem;
+        background-color: #444444;
+        border-radius: .05rem;
+        >div:not(.info){
+            margin-right: .2rem;
+            font-size: 0;
+            i{
+                font-size: 32px;
+                color: #FFF;
+            }
+        }
+        .info {
+            >div{
+                font-size: .12rem;
+                color: #FFF;
+            }
+        }
     }
 }
