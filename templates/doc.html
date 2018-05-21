@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/iconfont.css">
     <link rel="stylesheet" href="../static/css/com.css">
-    <title>Document</title>
+    <title>Kira</title>
 </head>
 <body>
     <div id="app" v-cloak class="doc">
-        <div class="wu-app"><img src="../static/img/wU-app.png" alt=""></div>
+        <public-top></public-top>
         <div class="header">
             <div class="user-info">
                 <div class="head-portrait">
@@ -36,6 +36,20 @@
                     <p v-if="item.type == 'DOC_IMAGE'"><img :src=" imgUrl + item.data.path" alt=""></p>
                 </li>
             </ul>
+            <div class="hidden">
+                <p>本帖隐藏内容</p>
+                <button class="view-btn" v-if="!hideCont" @click = "hideContShow(hideCont)">查看隐藏区</button>
+                <div class="hide-content" v-if="hideCont">
+                    <p><span>需要消耗</span><b>1枚节操</b></p>
+                    <div class="btn-content">
+                        <div>支付</div>
+                        <div>
+                            <b>免费</b>
+                            <b>分享解锁</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="bag">
                 <dl>
                     <dt>
@@ -89,6 +103,7 @@
     </div>
     <script src="../static/js/jquery-1.7.2.min.js"></script>
     <script src="../static/js/vue.js"></script>
+    <script src="../components/component.js"></script>
     <script>
         const ajaxUrl = "http://106.75.210.68:12333";
         var app = new Vue({
@@ -96,6 +111,7 @@
             data: {
                 postDatas: {},
                 imgUrl: "http://ss.moemoe.la/",
+                hideCont: false,
             },
             mounted () {
                 this.getUserInfo();
@@ -104,6 +120,9 @@
             methods: {
                 locationApp: function () {
                     window.location.href ='mydocdetail/openmoemoe.la';
+                },
+                hideContShow: function(value){
+                    app.hideCont = !value;
                 },
                 //获取用户/帖子信息
                 getUserInfo: function(){

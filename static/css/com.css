@@ -358,6 +358,60 @@
 .doc .comments dl dd .user-info .floor-time span {
   vertical-align: top;
 }
+.doc .hidden {
+  margin-top: .25rem;
+  padding: .2rem .4rem;
+  border: 1px dashed #42BEEC;
+  font-size: .12rem;
+  color: #42BEEC;
+  text-align: center;
+  border-radius: .05rem;
+}
+.doc .hidden .view-btn {
+  width: 2.59rem;
+  height: .45rem;
+  margin-top: .05rem;
+  color: #FFF;
+  background-color: #6FC93A;
+  border-radius: .05rem;
+}
+.doc .hidden .hide-content p {
+  font-size: .16rem;
+}
+.doc .hidden .hide-content p span {
+  color: #42BEEC;
+}
+.doc .hidden .hide-content p b {
+  color: #FB7BA2;
+}
+.doc .hidden .hide-content .btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .05rem;
+}
+.doc .hidden .hide-content .btn-content div {
+  height: .45rem;
+  color: #FFF;
+  border-radius: .05rem;
+}
+.doc .hidden .hide-content .btn-content div:nth-child(1) {
+  flex: .25;
+  margin-right: .05rem;
+  background-color: #FB7BA2;
+  line-height: .45rem;
+}
+.doc .hidden .hide-content .btn-content div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: .6;
+  background-color: #6FC93A;
+}
+.doc .hidden .hide-content .btn-content div:nth-child(2) b {
+  display: block;
+}
 .doc .bag {
   margin-top: .3rem;
   padding: .08rem;
